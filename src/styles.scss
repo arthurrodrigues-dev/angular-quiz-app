@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --box-shadow: #797979;
+    --dark-purple: #000036;
+    --lilac: #353484;
+    --light-lilac: #6D60AE;
+    --pink: #D8ABED;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(120deg, var(--dark-purple), var(--lilac), var(--light-lilac), var(--pink));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}

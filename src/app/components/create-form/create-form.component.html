@@ -1,0 +1,46 @@
+<div class="wrapper">
+    <div class="left__content">
+        <div class="left__header">
+            <h2>rodriquiz</h2>
+            <p>create your own quiz :)</p>
+        </div>
+    </div>
+    <div class="right__content">
+        <div class="right__header">
+            <h2>please fill out the form to proceed</h2>
+        </div>
+        <form class="form-group" [formGroup]="formGroup">
+            <div class="form__left">
+                <app-form-input
+                    placeholder="quiz name"
+                    labelName="Name"
+                    controlName="name"
+                ></app-form-input>
+                <app-form-input
+                    placeholder="quiz category"
+                    labelName="Category"
+                    controlName="category"
+                ></app-form-input>
+                <app-form-input
+                    placeholder="quiz difficulty"
+                    labelName="Difficulty"
+                    controlName="difficulty"
+                ></app-form-input>
+            </div>
+            <div class="form__right">
+                <app-form-input
+                    placeholder="number"
+                    labelName="Questions"
+                    type="number"
+                    controlName="numberOfQuestions"
+                ></app-form-input>
+                <app-form-input
+                    placeholder="quiz type"
+                    labelName="Type"
+                    controlName="type"
+                ></app-form-input>
+                <button (click)="onSubmit()">Next</button>
+            </div>
+        </form>
+    </div>
+</div>
