@@ -6,8 +6,10 @@ import { CreateQuestionsComponent } from './components/create-questions/create-q
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'create/form', component: CreateFormComponent},
-  {path: 'create/questions', component: CreateQuestionsComponent}
+  {path: 'create', children: [
+    {path: 'form', component: CreateFormComponent},
+    {path: 'questions', component: CreateQuestionsComponent}
+  ]}
 ];
 
 @NgModule({
