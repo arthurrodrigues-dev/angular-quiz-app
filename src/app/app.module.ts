@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { CreateFormComponent } from './components/create-form/create-form.component';
 import { FormInputComponent } from './components/form-input/form-input.component';
-import { ReactiveFormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms';
+import { CreateQuestionsComponent } from './components/create-questions/create-questions.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CreateFormComponent,
-    FormInputComponent
+    FormInputComponent,
+    CreateQuestionsComponent
   ],
   imports: [
     BrowserModule,

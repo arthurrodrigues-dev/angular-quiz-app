@@ -23,7 +23,8 @@ export class CreateFormComponent implements OnInit {
   }
 
   onSubmit(): void {
-    console.log(this.formGroup.value);
-    
+    this.results = this.formGroup.value;
+    console.log(this.results);
+
   }
 }
